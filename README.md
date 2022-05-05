@@ -10,17 +10,15 @@
 <a href="https://t.me/techmasterz">
   <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-blue?logo=telegram" width="150">
 
-## IF YOU NEED ANY ASSISTANCE FEEL FREE TO CONTACT
-## YOUTUBE  [SUPPORT_CHANNEL](https://t.me/technomindzchat)
-## Contact [<i>RAVI</i>](https://t.me/technomindzyt)
+## 
 
-## DEPLOY
+## Deploy To Heroku 👇
 
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
 <a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/CommonBot_For_All">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
 </a>
 </p>
 </details>
