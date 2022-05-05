@@ -1,15 +1,14 @@
 ![IMG_20220505_183836_455](https://user-images.githubusercontent.com/104905898/166929679-a94caef8-a1dd-4642-afec-e49fb13e9ed0.jpg)
 
+             <h2 align="centre"><i><b>♥️ Tech Masterz 💝</i></b></h2
 
-<h2 align="centre"><i><b>♥️ Tech Masterz 💝</i></b></h2
-
-## Introduction😎
+## Introduction 😎
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Tech+Masterz+Repo!;Created+by+Darklord!;A+simple+and+a+basic+Bot!;A+Advanced+AutoFilter+Bot;Don't+Forget+To+Subcribe;Tech+Masterz+in+Telegram;)
 </p>
 </h1>
-<a href="https://www.youtube.com/c/TechnoMindz">
-  <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-red?logo=youtube" width="150">
+<a href="https://www.telegram.com/c/TechMasterz">
+  <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-blue?logo=telegram" width="150">
 
 ## IF YOU NEED ANY ASSISTANCE FEEL FREE TO CONTACT
 ## YOUTUBE  [SUPPORT_CHANNEL](https://t.me/technomindzchat)
