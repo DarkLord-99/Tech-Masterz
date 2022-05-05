@@ -17,21 +17,19 @@
 <details><summary>Deploy To Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/TechnoMindz/CommonBot_For_All">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy To Heroku">
+<a href="https://heroku.com/deploy?template=https://github.com/MoulikMaity/Tech-Masterz">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
 </details>
 
-### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ🎑
+## Support 
 
-<a href="https://t.me/tmmainchannel"><img src="https://img.shields.io/badge/Join-Main%20Channel-green.svg?style=for-the-badge&logo=Telegram">
-<a href="https://t.me/technomindzchat"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram">
-
-## MODAL ROBOT
- * [<i><b>@TMElsaRobot</i></b>](https://t.me/tmelsarobot)
+<a href="https://t.me/+G-jUAYrcsMw4NTU1"><img src="https://img.shields.io/badge/Join-Main%20Group-red.svg?style=for-the-badge&logo=Telegram">
+<a href="https://t.me/techmasterz"><img src="https://img.shields.io/badge/Join-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram">
   
-### Required Variables
+## Required Variables
+
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 * `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
@@ -40,7 +38,9 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/1G1XwEOnxxo)
 * `DATABASE_NAME`: Name of the database in MongoDb Cluster0
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-### Optional Variables
+
+## Optional Variables
+
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
   
 ## Commands
