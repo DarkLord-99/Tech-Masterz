@@ -1,12 +1,11 @@
-<h2 align="centre"><i><b>💖TECHNO MINDZ BOT-1💝</i></b></h2>
+![IMG_20220505_183836_455](https://user-images.githubusercontent.com/104905898/166929679-a94caef8-a1dd-4642-afec-e49fb13e9ed0.jpg)
 
 
+<h2 align="centre"><i><b>♥️ Tech Masterz 💝</i></b></h2
 
-<p align="center"><a href="https://t.me/technomindzchat"><img src="https://telegra.ph/file/b417bdd01331179d5787c.jpg" width="500"></a></p>
+## Introduction😎
 
-## Introduction
-
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Techno+Mindz!;Created+by+RAVINANDAN!;A+simple+and+a+basic+Bot!;A+Advanced+AutoFilter+Bot;Don't+Forget+To+Subcribe;Techno+Mindz+in+YouTube;)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Tech+Masterz+Repo!;Created+by+Darklord!;A+simple+and+a+basic+Bot!;A+Advanced+AutoFilter+Bot;Don't+Forget+To+Subcribe;Tech+Masterz+in+Telegram;)
 </p>
 </h1>
 <a href="https://www.youtube.com/c/TechnoMindz">
