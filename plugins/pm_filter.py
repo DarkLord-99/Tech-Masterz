@@ -1,4 +1,4 @@
-# Kanged From @TroJanZheX
+# knaged from @hellodarklord
 import asyncio
 import re
 import ast
@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📽️[{get_size(file.file_size)}]{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}]{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -76,7 +76,7 @@ async def next_page(bot, query):
                     text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"📽️[{get_size(file.file_size)}]",
+                    text=f"[{get_size(file.file_size)}]",
                     callback_data=f'files_#{file.file_id}',
                 ),
             ]
@@ -96,14 +96,14 @@ async def next_page(bot, query):
                                   callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("✗ CLOSE", callback_data="close_data")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton(f"🗓 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
              InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("✗ CLOSE", callback_data="close_data")]
         )
     else:
         btn.append(
@@ -114,10 +114,10 @@ async def next_page(bot, query):
             ],
         )
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("✗ CLOSE", callback_data="close_data")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="⚠️HOW TO DOWNLOAD⚠️", url="https://t.me/TMMAINCHANNEL/4")
+        InlineKeyboardButton(text="⚠️ HOW TO DOWNLOAD ⚠️", url="https://t.me/TMMAINCHANNEL/4")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -132,7 +132,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("Check Your Own Requests Buddy 😤", show_alert=True)
+        return await query.answer("Check Bot PM, I Have Send Your Files In PM 📩", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -147,7 +147,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('This Movie Not Found In My DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -207,7 +207,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("That's not for you!!", show_alert=True)
+                await query.answer("This Is Not Your Message 🤗", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -416,10 +416,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/Tmmainchannel')
+            InlineKeyboardButton(' ', url='https://t.me/Tmmainchannel')
             ],[
             InlineKeyboardButton('🧊 𝐌𝐨𝐯𝐢𝐞𝐬', url='https://t.me/technomoviescollection'),
-            InlineKeyboardButton('📢 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠', url='https://t.me/Technomindzchat')
+            InlineKeyboardButton('🔔 𝐂𝐡𝐚𝐭𝐭𝐢𝐧𝐠', url='https://t.me/Technomindzchat')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
             ],[
@@ -659,7 +659,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🤩[{get_size(file.file_size)}]{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}]{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -672,7 +672,7 @@ async def auto_filter(client, msg, spoll=False):
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🤩[{get_size(file.file_size)}]",
+                    text=f"[{get_size(file.file_size)}]",
                     callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
@@ -688,17 +688,17 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("✗ CLOSE", callback_data="close_data")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.append(
-            [InlineKeyboardButton("❌CLOSE❌", callback_data="close_data")]
+            [InlineKeyboardButton("✗ CLOSE", callback_data="close_data")]
         )
     btn.insert(0, [
-        InlineKeyboardButton(text="⚠️HOW TO DOWNLOAD⚠️", url="https://t.me/TmMainChannel/4")
+        InlineKeyboardButton(text="⚠️ HOW TO DOWNLOAD ⚠️", url="https://t.me/TmMainChannel/4")
     ])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
