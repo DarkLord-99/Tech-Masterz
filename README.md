@@ -1,6 +1,6 @@
 ![IMG_20220505_183836_455](https://user-images.githubusercontent.com/104905898/166929679-a94caef8-a1dd-4642-afec-e49fb13e9ed0.jpg)
 
-## ♥️ Tech Masterz Bot 💝
+##  Tech Masterz Bot 
 
 ## Introduction 😎
 
@@ -9,8 +9,6 @@
 </h1>
 <a href="https://t.me/techmasterz">
   <img src="https://img.shields.io/badge/𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴-blue?logo=telegram" width="150">
-
-## 
 
 ## Deploy To Heroku 👇
 
@@ -44,7 +42,7 @@
 * `PICS`: Telegraph links of images to show in start message.( Multiple images can be used seperated by space )
   
 ## Commands
-```
+
 * /logs - to get the rescent errors
 * /stats - to get status of files in db.
 * /filter - add manual filters
