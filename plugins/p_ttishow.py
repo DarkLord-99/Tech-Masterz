@@ -16,13 +16,13 @@ async def save_group(bot, message):
     if temp.ME in r_j_check:
         if not await db.get_chat(message.chat.id):
             total=await bot.get_chat_members_count(message.chat.id)
-            r_j = message.from_user.mention if message.from_user else "Anonymous" 
+            r_j = message.mention if message.from_user else "Anonymous" 
             await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j))       
             await db.add_chat(message.chat.id, message.chat.title)
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/technomindzchat')
+                InlineKeyboardButton('Support', url=f'https://t.me/techmasterz')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TechnoMindzchat')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/techmasterz')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -53,8 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hello 👋, {u.mention}, Welcome to {message.chat.title} \nHow Are you ?\nJoin Your Freiends Here\nAlso Join Our Chatting Group @TechnoMindzChat</b>")
-
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hello 👋, {u.mention}, Welcome to {message.chat.title} \nMy Name Is MOVIE TIME BOT 2.0, I Can Provide Movies/Series In This Group.Just Type The Actual Name Of The Movie/Series.You Will Get The Movie/Series If You Write Correct Spelling.If You Don't Get The Movie/Series It Is Sure That You Have Written Incorrect Spelling Or Your Requested Movie/Series Does Not Exit In My Database.😐</b>")
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
@@ -67,7 +66,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/technomindzchat')
+            InlineKeyboardButton('Support', url=f'https://t.me/techmasterz')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
