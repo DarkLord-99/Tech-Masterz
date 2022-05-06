@@ -42,7 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', ' ')
+            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Sҽαɾƈԋ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🎬 Mσʋιҽ Gɾσυρ', url='https://t.me/+PD0ieo-ECJgxMTU9')
@@ -88,7 +88,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', url=' ')
+            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', url=f'http://t.me/{temp.U_NAME}?startgroup=true')     
             ],[
             InlineKeyboardButton('🔍 Sҽαɾƈԋ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🎬 Mσʋιҽ Gɾσυρ', url='https://t.me/+PD0ieo-ECJgxMTU9')
