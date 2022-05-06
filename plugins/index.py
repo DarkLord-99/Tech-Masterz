@@ -84,11 +84,11 @@ async def send_for_index(bot, message):
     if message.from_user.id in ADMINS:
         buttons = [
             [
-                InlineKeyboardButton('✔️APPROVED✔️',
+                InlineKeyboardButton('✔ Approved',
                                      callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
             ],
             [
-                InlineKeyboardButton('❌CANCEL❌', callback_data='close_data'),
+                InlineKeyboardButton('✗ Cancel', callback_data='close_data'),
             ]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -105,11 +105,11 @@ async def send_for_index(bot, message):
         link = f"@{message.forward_from_chat.username}"
     buttons = [
         [
-            InlineKeyboardButton('ACCEPT INDEX✔️',
+            InlineKeyboardButton('✔ Accept Index',
                                  callback_data=f'index#accept#{chat_id}#{last_msg_id}#{message.from_user.id}')
         ],
         [
-            InlineKeyboardButton('REJECT INDEX❌',
+            InlineKeyboardButton('✗ Reject Index',
                                  callback_data=f'index#reject#{chat_id}#{message.message_id}#{message.from_user.id}'),
         ]
     ]
@@ -117,7 +117,7 @@ async def send_for_index(bot, message):
     await bot.send_message(LOG_CHANNEL,
                            f'#IndexRequest\n\nBy : {message.from_user.mention} (<code>{message.from_user.id}</code>)\nChat ID/ Username - <code> {chat_id}</code>\nLast Message ID - <code>{last_msg_id}</code>\nInviteLink - {link}',
                            reply_markup=reply_markup)
-    await message.reply('ThankYou For the Contribution😀, Wait For My Moderators to verify✅ the files.\nMade By @TechnoMindzChat')
+    await message.reply('ThankYou For the Contribution 🙏, Wait For My Moderators to ✔Verify the files.\nMade By @techmasterz')
 
 
 @Client.on_message(filters.command('setskip') & filters.user(ADMINS))
