@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/Tmmainchannel')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/techmasterz')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,13 +42,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/Tmmainchannel')
+            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', ' ')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝙂𝙧𝙤𝙪𝙥', url='https://t.me/technomoviescollection')
+            InlineKeyboardButton('🔍 Sҽαɾƈԋ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🎬 Mσʋιҽ Gɾσυρ', url='https://t.me/+PD0ieo-ECJgxMTU9')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ Hҽʅρ', callback_data='help'),
+            InlineKeyboardButton('😊 AႦσυƚ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -88,13 +88,13 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐎𝐮𝐫 𝐌𝐚𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/Tmmainchannel')
+            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', url=' ')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝙂𝙧𝙤𝙪𝙥', url='https://t.me/technomoviescollection')
+            InlineKeyboardButton('🔍 Sҽαɾƈԋ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🎬 Mσʋιҽ Gɾσυρ', url='https://t.me/+PD0ieo-ECJgxMTU9')
             ],[
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ Hҽʅρ', callback_data='help'),
+            InlineKeyboardButton('😊 AႦσυƚ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
