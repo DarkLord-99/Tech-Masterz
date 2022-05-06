@@ -416,7 +416,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤', url=' ')
+            InlineKeyboardButton('☤ Aԃԃ Mҽ Tσ Yσυɾ Gɾσυρ ☤',  url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🎬 Mσʋιҽ Gɾσυρ', url=' https://t.me/+PD0ieo-ECJgxMTU9'),
             InlineKeyboardButton('🔔 Uρԃαƚҽʂ Cԋαɳɳҽʅ', url='https://t.me/techmasterz')
@@ -452,7 +452,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Uρԃαƚҽʂ Cԋαɳɳҽʅ', url='https://t.me/techmasterz')
+            InlineKeyboardButton('🔔 Uρԃαƚҽʂ Cԋαɳɳҽʅ', url='https://t.me/techmasterz')
             ],[
             InlineKeyboardButton('🆘 Hҽʅρ', url='https://t.me/hellodarklord'),
             InlineKeyboardButton('🎬 Mყ Mσʋιҽ Gɾσυρ', url='https://t.me/+PD0ieo-ECJgxMTU9')
