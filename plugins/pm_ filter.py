@@ -1,4 +1,4 @@
-# knaged from @hellodarklord
+# kanged From @hellodarklord
 import asyncio
 import re
 import ast
