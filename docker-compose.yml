@@ -12,4 +12,4 @@ services:
       ADMINS: $ADMINS
       LOG_CHANNEL: $LOG_CHANNEL
       PICS: $PICS
-      
+      UPSTREAM_REPO: $UPSTREAM_REPO
