@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🛠️ Connection', callback_data='coct'),
             InlineKeyboardButton('🎉 Extra Mods', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Hσɱҽ', callback_data='start'),
+            InlineKeyboardButton('🏠 Hσɱҽ', callback_data='home'),
             InlineKeyboardButton('📉 Sƚαƚυʂ', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -460,7 +460,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🧑‍💻 Dҽʋҽʅσρҽɾ', url='https://t.me/hellodarklord'),
             InlineKeyboardButton('♥️ Sσυɾƈҽ', callback_data='source')
             ],[
-            InlineKeyboardButton('🏠 Hσɱҽ', callback_data='start')
+            InlineKeyboardButton('🏠 Hσɱҽ', callback_data='home')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
